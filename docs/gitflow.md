@@ -31,17 +31,17 @@ sequenceDiagram
     hotfix->>develop: Merge back to develop
 ```
 
-## The Gitflow Branches
+# The Gitflow Branches
 
 Gitflow uses five types of branches. The two primary, long-lived branches are `main` and `develop`. The other three (`hotfix`, `release`, `feature`) are temporary, supporting branches that are deleted after use.
 
-### main (or master)
+## main (or master)
 
 **Purpose:** Stores the official, tagged release history. This branch should only contain stable, production-ready code.
 
 **DO NOT** commit directly to `main`. History is created by merging from `release` or `hotfix` branches.
 
-### hotfix/\*
+## hotfix/\*
 
 **Purpose:** To fix an urgent bug in production.
 
@@ -49,7 +49,7 @@ Gitflow uses five types of branches. The two primary, long-lived branches are `m
 
 **Example:** See Workflow 3 below for details.
 
-### release/\*
+## release/\*
 
 **Purpose:** To prepare a new production release (final bugs, versioning).
 
@@ -57,13 +57,13 @@ Gitflow uses five types of branches. The two primary, long-lived branches are `m
 
 **Example:** See Workflow 2 below for details.
 
-### develop
+## develop
 
 **Purpose:** The primary integration branch for all new features. This branch represents the "next release" in development.
 
 **Flow:** All feature branches are created from `develop` and merged back into it.
 
-### feature/\*
+## feature/\*
 
 **Purpose:** For developing new, non-urgent features.
 
